@@ -1,0 +1,272 @@
+doctype html
+head
+  title
+    | Home
+  meta(charset='utf-8' name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+  // <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
+  script(src='https://unpkg.com/scrollreveal')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='/css/home.css')
+.whole
+  .Header
+    header.fixed-top
+      #navy.navhead
+        nav.navtop.navbar.navbar-expand-md
+          a.navbar-brand.ml-3.brandname(href='#')
+            img(src='' alt='')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;RECYCLE THE WASTE
+          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#mymenu')
+            span.nav-icon.navbar-toggler-icon
+          #mymenu.collapse.navbar-collapse
+            ul.navbar-nav.ml-auto
+              li.nav-item.active
+                a.nav-link.mr-3(href='/waste.com/home') Home
+              li.nav-item
+                a.nav-link.mr-3(href='/waste.com/services') Services
+              li.nav-item
+                a.nav-link.mr-3(href='/waste.com/about') About Us
+              li.nav-item
+                a.nav-link.mr-3(href='/waste.com/contact') Contact Us
+              i.fa.fa-map-marker.location(aria-hidden='true')
+  .container
+    #myslideshow.carousel.slide.carousel-fade(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#myslideshow' data-slide-to='0')
+        li(data-target='#myslideshow' data-slide-to='1')
+        li(data-target='#myslideshow' data-slide-to='2')
+      .carousel-inner
+        .carousel-item.peopleCarouselImg.active(data-interval='10000')
+          img.d-block.w-100.img-fluid.rounded(src='/img/Homepage/img1.jpg' alt='')
+          .carousel-caption.d-none.d-sm-block
+            h4 Learn Web Development
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        .carousel-item.peopleCarouselImg
+          img.d-block.w-100.img-fluid.rounded(src='/img/Homepage/img2.jpg' alt='')
+          .carousel-caption.d-none.d-sm-block
+            h4 Learn Web Development
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        .carousel-item.peopleCarouselImg
+          img.d-block.w-100.img-fluid.rounded(src='/img/Homepage/img3.jpg' alt='')
+          .carousel-caption.d-none.d-sm-block
+            h4 Learn Web Development
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      a.carousel-control-prev(href='#myslideshow' role='button' data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#myslideshow' role='button' data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+  .icons
+    a.facebook(href='#')
+      i.fa.fa-facebook(aria-hidden='true')
+    a.youtube(href='#')
+      i.fa.fa-youtube-play(aria-hidden='true')
+    a.twitter(href='#')
+      i.fa.fa-twitter(aria-hidden='true')
+    a.instagram(href='#')
+      i.fa.fa-instagram(aria-hidden='true')
+    a.linkedin(href='#')
+      i.fa.fa-linkedin(aria-hidden='true')
+  // ------Welcome to Recycle the waste Start----
+  .container.welcome
+    .text-center
+      h1.welcome_text WELCOME TO RECYCLE THE WASTE
+      p.mt-3.welcome_para
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa doloremque corrupti, explicabo animi consequuntur illo iure, blanditiis consectetur minus, quo magnam sunt id quam rerum! Impedit sit tempora cum blanditiis.
+  // ------Welcome to Recycle the waste End----
+  .container.para1
+    .para2.row
+      .col-md-6.text-justify.left-side
+        p
+          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &apos;Content here, content here&apos;, making it look like readable English.
+      .col-md-6.I1
+        img.img-fluid.rounded(src='/img/Homepage/truck1.jpg' alt='')
+  .fasion-trends.container.mt-5
+    .fashion-box
+      .title-style
+        h1 OUR PRODUCTS
+      p.text-center
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deserunt
+        | veritatis dolorum minus. Voluptate tempora facere, omnis consequatur eius libero adipisci nisi
+        | sit totam vel rem dolorem! Voluptatibus harum placeat veniam deserunt, tenetur Lorem ipsum dolor
+        | sit, amet consectetur adipisicing elit. Ullam fugit non accusamus architecto cupiditate qui
+        | earum repellat in iste incidunt!
+  .container
+    .row
+      .col-md-4.col-lg-4.card1
+        // Card Narrower
+        .card.card-cascade.narrower
+          // Card image
+          .view.view-cascade.overlay
+            img.card-img-top(src='https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg' alt='Card image cap')
+            a
+              .mask.rgba-white-slight
+          // Card content
+          .card-body.card-body-cascade
+            // Label
+            h5.pink-text.pb-2.pt-1
+              i.fas.fa-utensils
+              |  Culinary
+            // Title
+            h4.font-weight-bold.card-title Cheat day inspirations
+            // Text
+            p.card-text
+              | Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+              | laboriosam, nisi ut aliquid ex ea commodi.
+            // Button
+            a.btn.btn-unique Button
+          // Card footer
+          .card-footer.text-muted.text-center
+            | 2 days ago
+        // Card Narrower
+      .col-md-4.col-lg-4.card2
+        // Card Narrower
+        .card.card-cascade.narrower
+          // Card image
+          .view.view-cascade.overlay
+            img.card-img-top(src='https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg' alt='Card image cap')
+            a
+              .mask.rgba-white-slight
+          // Card content
+          .card-body.card-body-cascade
+            // Label
+            h5.pink-text.pb-2.pt-1
+              i.fas.fa-utensils
+              |  Culinary
+            // Title
+            h4.font-weight-bold.card-title Cheat day inspirations
+            // Text
+            p.card-text
+              | Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+              | laboriosam, nisi ut aliquid ex ea commodi.
+            // Button
+            a.btn.btn-unique Button
+          // Card footer
+          .card-footer.text-muted.text-center
+            | 2 days ago
+        // Card Narrower
+      .col-md-4.col-lg-4.card3
+        // Card Narrower
+        .card.card-cascade.narrower
+          // Card image
+          .view.view-cascade.overlay
+            img.card-img-top(src='https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg' alt='Card image cap')
+            a
+              .mask.rgba-white-slight
+          // Card content
+          .card-body.card-body-cascade
+            // Label
+            h5.pink-text.pb-2.pt-1
+              i.fas.fa-utensils
+              |  Culinary
+            // Title
+            h4.font-weight-bold.card-title Cheat day inspirations
+            // Text
+            p.card-text
+              | Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+              | laboriosam, nisi ut aliquid ex ea commodi.
+            // Button
+            a.btn.btn-unique Button
+          // Card footer
+          .card-footer.text-muted.text-center
+            | 2 days ago
+        // Card Narrower
+  // Footer
+  footer.page-footer.font-small.unique-color-dark
+    div(style='background-color: #6351ce;')
+      .container
+        // Grid row
+        .row.py-4.d-flex.align-items-center
+          // Grid column
+          .col-md-6.col-lg-5.text-center.text-md-left.mb-4.mb-md-0
+            h6.mb-0 Get connected with us on social networks!
+          // Grid column
+          // Grid column
+          .col-md-6.col-lg-7.text-center.text-md-right
+            // Facebook
+            a.fb-ic
+              i.fa.fa-facebook.mr-4(aria-hidden='true')
+            // Twitter
+            a.gplus-ic
+              i.fa.fa-google-plus.mr-4(aria-hidden='true')
+            // Google +
+            a.tw-ic
+              i.fa.fa-twitter.mr-4(aria-hidden='true')
+            // Linkedin
+            a.li-ic
+              i.fa.fa-instagram.mr-4(aria-hidden='true')
+            // Instagram
+            a.ins-ic
+              i.fa.fa-linkedin.mr-4(aria-hidden='true')
+          // Grid column
+        // Grid row
+    // Footer Links
+    div(style='background-color: #05152cf1; color: white;')
+      .container.text-center.text-md-left
+        // Grid row
+        .row.pt-5
+          // Grid column
+          .col-md-3.col-lg-4.col-xl-3.mx-auto.mb-4
+            // Content
+            h6.text-uppercase.font-weight-bold About
+            hr.deep-purple.accent-2.mb-4.mt-0.d-inline-block.mx-auto.footerunderline(style='width: 60px;')
+            p Stuforia makes Abroad education easier for student and parents.
+          // Grid column
+          // Grid column
+          .col-md-2.col-lg-2.col-xl-2.mx-auto.mb-4
+            // Links
+            h6.text-uppercase.font-weight-bold Services
+            hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto.deep.purple(style='width: 60px;')
+            p
+              a(href='airticket.html') Airticket
+            p
+              a(href='#!') Forex Card
+            p
+              a(href='#!') Sim Card
+            p
+              a(href='#!') TravelInsurance
+          // Grid column
+          // Grid column
+          .col-md-3.col-lg-2.col-xl-2.mx-auto.mb-4
+            // Links
+            h6.text-uppercase.font-weight-bold Useful links
+            hr.deep-purple.accent-2.mb-4.mt-0.d-inline-block.mx-auto(style='width: 60px;')
+            p
+              a(href='#!') Your Account
+            p
+              a(href='#!') Become an Affiliate
+            p
+              a(href='#!') Shipping Rates
+            p
+              a(href='#!') Help
+          // Grid column
+          // Grid column
+          .col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4
+            // Links
+            h6.text-uppercase.font-weight-bold Contact
+            hr.deep-purple.accent-2.mb-4.mt-0.d-inline-block.mx-auto(style='width: 60px;')
+            p
+              i.fa.fa-home.mr-3(aria-hidden='true')
+              |  Teynampet,Chennai
+            p
+              i.fa.fa-envelope.mr-3(aria-hidden='true')
+              |  info@example.com
+            p
+              i.fa.fa-phone.mr-3(aria-hidden='true')
+              |  + 044 4211 3121
+          // Grid column
+        // Grid row
+    // Footer Links
+    // Copyright
+    div(style='background-color: #020b16ef; color: white;')
+      .footer-copyright.text-center.py-3.text-secondary
+        | &Acirc;&copy; 2020 Copyright:
+        a(href='Recycle The Waste') Compunet Connection
+    // Copyright
+  // Footer
+script(src='/js/homescroll.js')

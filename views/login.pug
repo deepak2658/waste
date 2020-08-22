@@ -1,0 +1,37 @@
+doctype html
+head
+  title Animated Login Form
+  link(rel='stylesheet' type='text/css' href='/css/login.css')
+  link(href='https://fonts.googleapis.com/css?family=Poppins:600&display=swap' rel='stylesheet')
+  script(src='https://kit.fontawesome.com/a81368914c.js')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+img.wave(src='/img/login/wave.png')
+.container
+  .img
+    img(src='/img/login/bg.svg')
+  .login-content
+    form(action='index.html')
+      img(src='/img/login/avatar.svg')
+      h2.title Welcome
+      .input-div.one
+        .i
+          i.fas.fa-user
+        .div
+          h5 Username
+          input.input(type='text' required='required')
+      .input-div.mail
+        .i
+          i.fas.fa-envelope
+        .div
+          h5 Email
+          input.input(type='text' required='required')
+      .input-div.pass
+        .i
+          i.fas.fa-lock
+        .div
+          h5 Password
+          input.input(type='password' required='required')
+      a.a1(href='#') Forgot Password?
+      input.btn(type='submit' value='Login')
+      a.a2(href='#') New User...Sign Up?
+script(type='text/javascript' src='/js/login.js')

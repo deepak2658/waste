@@ -1,0 +1,180 @@
+doctype html
+head
+  title
+    | Home
+  meta(charset='utf-8' name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+  // <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
+  link(href='https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Lato&display=swap' rel='stylesheet')
+  script(src='https://unpkg.com/scrollreveal')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='/css/contact.css')
+.whole
+  .Header
+    header.fixed-top
+      #navy.navhead
+        nav.navtop.navbar.navbar-expand-md
+          a.navbar-brand.ml-3.brandname(href='#')
+            img(src='' alt='')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;RECYCLE THE WASTE
+          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#mymenu')
+            span.nav-icon.navbar-toggler-icon
+          #mymenu.collapse.navbar-collapse
+            ul.navbar-nav.ml-auto
+              li.nav-item.active
+                a.nav-link.mr-3(href='/waste.com/home') Home
+              li.nav-item
+                a.nav-link.mr-3(href='/waste.com/services') Services
+              li.nav-item
+                a.nav-link.mr-3(href='/waste.com/about') About Us
+              li.nav-item
+                a.nav-link.mr-3(href='/waste.com/contact') Contact Us
+              i.fa.fa-map-marker.location(aria-hidden='true')
+  .first.text-center.mb-3
+    p GOT A QUESTION?
+    h3 Contact Recycle The Waste
+  .second.container.text-center
+    p
+      | We&rsquo;re here to help and answer any question you might have. We look forward to hearing from you &#x1F642;
+  .slantdiv.third
+  section.contact
+    .container.container1
+      .contactInfo
+        .box
+          .icon
+            i.fa.fa-map-marker(aria-hidden='true')
+          .text
+            h3
+              address Address
+            p
+              | 4671 Sugar Camp Road, 
+              br
+              | Owatona , Minnesota,
+              br
+              | 55060
+        .box
+          .icon
+            i.fa.fa-phone(aria-hidden='true')
+          .text
+            h3 Phone
+            p 943-775-1211
+        .box
+          .icon
+            i.fa.fa-envelope-o(aria-hidden='true')
+          .text
+            h3 Email
+            p recyclethewaste999@gmail.com
+      .contactForm
+        form(action='')
+          h2 Send Message
+          .inputBox
+            input(type='text' name='' required='required')
+            span Full Name
+          .inputBox
+            input(type='text' name='' required='required')
+            span Email
+          .inputBox
+            textarea(required='required')
+            span Type your message...
+          .inputBox
+            input(type='submit' name='' value='Send')
+  // Footer
+  footer.page-footer.font-small.unique-color-dark
+    div(style='background-color: #6351ce;')
+      .container
+        // Grid row
+        .row.py-4.d-flex.align-items-center
+          // Grid column
+          .col-md-6.col-lg-5.text-center.text-md-left.mb-4.mb-md-0
+            h6.mb-0 Get connected with us on social networks!
+          // Grid column
+          // Grid column
+          .col-md-6.col-lg-7.text-center.text-md-right
+            // Facebook
+            a.fb-ic
+              i.fa.fa-facebook.mr-4(aria-hidden='true')
+            // Twitter
+            a.gplus-ic
+              i.fa.fa-google-plus.mr-4(aria-hidden='true')
+            // Google +
+            a.tw-ic
+              i.fa.fa-twitter.mr-4(aria-hidden='true')
+            // Linkedin
+            a.li-ic
+              i.fa.fa-instagram.mr-4(aria-hidden='true')
+            // Instagram
+            a.ins-ic
+              i.fa.fa-linkedin.mr-4(aria-hidden='true')
+          // Grid column
+        // Grid row
+    // Footer Links
+    div(style='background-color: #05152cf1; color: white;')
+      .container.text-center.text-md-left
+        // Grid row
+        .row.pt-5
+          // Grid column
+          .col-md-3.col-lg-4.col-xl-3.mx-auto.mb-4
+            // Content
+            h6.text-uppercase.font-weight-bold About
+            hr.deep-purple.accent-2.mb-4.mt-0.d-inline-block.mx-auto.footerunderline(style='width: 60px;')
+            p Stuforia makes Abroad education easier for student and parents.
+          // Grid column
+          // Grid column
+          .col-md-2.col-lg-2.col-xl-2.mx-auto.mb-4
+            // Links
+            h6.text-uppercase.font-weight-bold Services
+            hr.accent-2.mb-4.mt-0.d-inline-block.mx-auto.deep.purple(style='width: 60px;')
+            p
+              a(href='airticket.html') Airticket
+            p
+              a(href='#!') Forex Card
+            p
+              a(href='#!') Sim Card
+            p
+              a(href='#!') TravelInsurance
+          // Grid column
+          // Grid column
+          .col-md-3.col-lg-2.col-xl-2.mx-auto.mb-4
+            // Links
+            h6.text-uppercase.font-weight-bold Useful links
+            hr.deep-purple.accent-2.mb-4.mt-0.d-inline-block.mx-auto(style='width: 60px;')
+            p
+              a(href='#!') Your Account
+            p
+              a(href='#!') Become an Affiliate
+            p
+              a(href='#!') Shipping Rates
+            p
+              a(href='#!') Help
+          // Grid column
+          // Grid column
+          .col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4
+            // Links
+            h6.text-uppercase.font-weight-bold Contact
+            hr.deep-purple.accent-2.mb-4.mt-0.d-inline-block.mx-auto(style='width: 60px;')
+            p
+              i.fa.fa-home.mr-3(aria-hidden='true')
+              |  Teynampet,Chennai
+            p
+              i.fa.fa-envelope.mr-3(aria-hidden='true')
+              |  info@example.com
+            p
+              i.fa.fa-phone.mr-3(aria-hidden='true')
+              |  + 044 4211 3121
+          // Grid column
+        // Grid row
+    // Footer Links
+    // Copyright
+    div(style='background-color: #020b16ef; color: white;')
+      .footer-copyright.text-center.py-3.text-secondary
+        | &copy; 2020 Copyright:
+        a(href='Recycle The Waste') Compunet Connection
+    // Copyright
+  // Footer
+script(src="/js/contactscroll.js")  
+
+  

@@ -1,0 +1,250 @@
+/*
+
+Navbar Section
+
+*/
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.navhead{
+    background-color:black;
+    padding: 35px 0;
+}
+.navhead a{
+    color: white;
+    font-size: 20px;
+}
+
+.navhead .location{
+    color: white;
+    font-size: 35px;
+}
+
+.navhead .brandname{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.navhead a:hover{
+    color: rgb(180, 177, 177);
+    transition: 0.3s;
+}
+
+.head-bg img{
+    display:block;
+    width:100%;
+    object-fit: cover;
+    height: 100vh;
+  }
+
+.Header
+{
+    margin-bottom: 8.7%;
+}
+
+
+  /*
+  Navbar section end
+
+  */
+
+  .first{
+      margin-top: 11%;
+  }
+
+  .first h3{
+      font-size: 46px;
+      font-weight: 900;
+      color: #102a43;
+  }
+
+  .first p{
+      font-size: 10px;
+      font-weight: 400;
+      color: #963484;
+      font-size: 0.8571428571rem;
+      letter-spacing: 0.16em;
+  }
+  .second{
+    font-weight: 400;
+    color: #334e68;
+    font-size: 18px;
+    line-height: 2rem;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .third{
+      margin-top: 17%;
+  }
+
+  .slantdiv{
+      position: relative;
+      width: 100%;
+      height: 500px;
+      background: rgb(98, 125, 152);
+  }
+
+  .slantdiv:after{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: top right;
+      transform: skewY(8deg);
+  }
+
+
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .contact{
+      margin-top: -700px;
+      position: relative;
+      min-height: 100vh;
+      padding: 50px 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .container1{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+  }
+
+  .container .contactInfo{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .container .contactInfo .box{
+      position: relative;
+      padding: 20px 0;
+      display: flex;
+  }
+
+  .container .contactInfo .box .icon{
+      min-width: 60px;
+      height: 60px;
+      background: rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 22px;
+      box-shadow: 0 8px 19px 0 rgba(63, 63, 63, 0.6), 0 6px 20px 0 rgba(0,0,0,0.9);
+  }
+
+  .container .contactInfo .box .text{
+      display: flex;
+      margin-left: 20px;
+      font-size: 16px;
+      color: white;
+      flex-direction: column;
+      font-weight: 300;
+  }
+
+  .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #0f1720;
+  }
+
+  .contactForm{
+      width: 40%;
+      padding: 40px;
+      background: rgb(255, 255, 255);
+      border: 1px solid black;
+      box-shadow: 0 8px 19px 0 rgba(63, 63, 63, 0.6), 0 6px 20px 0 rgba(0,0,0,0.9);
+  }
+
+  .contactForm h2{
+      font-size: 30px;
+      color: #333;
+      font-weight: 500;
+  }
+
+  .contactForm .inputBox{
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .contactForm .inputBox input,textarea{
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid #333;
+      outline: none;
+      resize: none;
+  }
+
+  .contactForm .inputBox span{
+      position: absolute;
+      left: 0;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      pointer-events: none;
+      transition: 0.5s;
+      color: #666;
+  }
+
+  .contactForm .inputBox input:focus ~ span , input:valid ~span ,
+  .contactForm .inputBox textarea:focus ~ span ,.contactForm .inputBox  textarea:valid ~span{
+      color: #e91e63;
+      font-size: 12px;
+      transform: translateY(-20px);
+  }
+
+  .contactForm .inputBox input[type="submit"]
+  {
+      width: 100px;
+      background:#00bcd4;
+      color: #333;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 18px;
+  }
+
+
+/********Footer Start*********/
+
+footer{
+    font-family: Roboto , sans-serif;
+}
+footer a{
+    color: white;
+}
+.page-footer{
+    margin-top: -22px;
+}
+footer a:hover{
+    text-decoration: none;
+    color: white;
+}
+.fb-ic , .tw-ic , .gplus-ic , .li-ic , .ins-ic{
+    color: white !important;
+}
+hr{
+    background-color: #6351ce !important;
+}
