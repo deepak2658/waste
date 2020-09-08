@@ -5,31 +5,41 @@ Navbar Section
 */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navhead{
+    /*
     background-color:black;
-    padding: 35px 0;
+    */
+    background-image: linear-gradient(to right, #5F0A87,#A4508B);
+    padding: 28px 0 ;
+    box-shadow: 0 2px 19px 0 rgba(63, 63, 63, 0.6), 0 2px 15px 0 rgba(0,0,0,0.9);
 }
 .navhead a{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Alex Brush', cursive;
+    font-family: 'Arizonia', cursive;
 }
 
 .navhead .location{
     color: white;
     font-size: 35px;
+    padding-top: 50%;
 }
 
 .navhead .brandname{
-    color: white;
-    font-size: 20px;
+
+    font-size: 40px;
     font-weight: 700;
+    font-family: 'Alex Brush', cursive;
+    font-family: 'Arizonia', cursive;
 }
-.navhead a:hover{
-    color: rgb(180, 177, 177);
-    transition: 0.3s;
+.navhead a:hover , .fa-map-marker:hover{
+    color: black;
+    transition: 0.5s;
 }
 
 .head-bg img{
@@ -38,12 +48,23 @@ body {
     object-fit: cover;
     height: 100vh;
   }
-
+/*
+  .navbar-nav li.active{
+      border-bottom: 1px solid white;
+  }
+*/
 .Header
 {
-    margin-bottom: 8.7%;
+    margin-bottom: 170px;
 }
 
+.navbar-toggler-icon{
+    border-color:#ffffff;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
   /*
   Navbar section end
@@ -51,7 +72,7 @@ body {
   */
 
   .first{
-      margin-top: 11%;
+      margin-top: 180px;
   }
 
   .first h3{
@@ -77,7 +98,7 @@ body {
   }
 
   .third{
-      margin-top: 17%;
+      margin-top: 21%;
   }
 
   .slantdiv{
@@ -236,7 +257,7 @@ footer a{
     color: white;
 }
 .page-footer{
-    margin-top: -22px;
+    margin-top: -23px;
 }
 footer a:hover{
     text-decoration: none;
@@ -246,5 +267,125 @@ footer a:hover{
     color: white !important;
 }
 hr{
-    background-color: #6351ce !important;
+    background-color: white !important;
+}
+
+
+@media (max-width:991px)
+{
+    .slantdiv{
+        height: 1000px;
+    }
+    .contact{
+        margin-top: -1060px;
+        margin-bottom:1200 ;
+    }
+    .page-footer{
+        margin-top: 39px;
+    }
+    .contact
+    {
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column; 
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .container .contactForm{
+        width: 100%;
+    }
+}
+
+@media (max-width:991px)
+{
+    .second{
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      .navhead .brandname{
+        margin-left: 0% !important;
+        transition: 0.5s;
+        font-size: 40px;
+    }
+    .navhead .location{
+        padding-top: 0%;
+    }
+    .navbar-nav{
+		background-image: linear-gradient(to right, #5F0A87,#A4508B);
+		height: 100vh;
+	}
+    
+}
+
+@media (max-width:650px)
+{
+    .first h3{
+        font-size: 35px;
+        font-weight: 900;
+    }
+}
+
+@media (max-width:470px)
+{
+    .first h3{
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .contactForm h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:415px)
+{
+    .slantdiv{
+        height: 1050px;
+    }
+    .contact{
+        margin-top: -1100px;
+        margin-bottom:1200 ;
+    }
+    .page-footer{
+        margin-top: 85px;
+    }
+    .mail p{
+        font-size: 12px;
+    }
+    .first h3{
+        font-size: 25px;
+    }
+    .second{
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 15px;
+      }
+}
+
+
+
+@media (max-width:394px)
+{
+    .page-footer{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:379px)
+{
+    .page-footer{
+        margin-top: 25px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width:330px)
+{
+    .page-footer{
+        margin-top: -0px;
+    }
 }

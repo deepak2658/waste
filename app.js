@@ -7,6 +7,7 @@ const Sequelize = require('sequelize');
 const sequelize = require('./util/database');
 
 const staticPages = require('./routes/static')
+const mongoConnect = require('./util/database')
 // const displayS1Data = require('./routes/displayS1');
 // const loginData = require('./routes/login');
 // const adminctrl = require('./routes/admin');
@@ -32,6 +33,14 @@ app.use(staticPages)
 app.listen(3000,err=>{
     if (err) {
         console.error(err);
-    }
+   a }
     console.log('server started at port 3000');
 });
+
+mongoConnect(client=>{
+    console.log(client);
+       
+})
+
+
+

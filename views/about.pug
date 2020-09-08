@@ -1,13 +1,14 @@
 doctype html
 head
   title
-    | Home
+    | About Us
   meta(charset='utf-8' name='viewport' content='width=device-width, initial-scale=1')
   link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
   script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
   // <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
   link(href='https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Alex+Brush&family=Arizonia&display=swap' rel='stylesheet')
   script(src='https://unpkg.com/scrollreveal')
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
   link(href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' rel='stylesheet')
@@ -16,12 +17,12 @@ head
   .Header
     header.fixed-top
       #navy.navhead
-        nav.navtop.navbar.navbar-expand-md
-          a.navbar-brand.ml-3.brandname(href='#')
+        nav.navtop.navbar.navbar-expand-lg
+          a.navbar-brand.ml-3.brandname(href='/waste.com')
             img(src='' alt='')
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;RECYCLE THE WASTE
-          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#mymenu')
-            span.nav-icon.navbar-toggler-icon
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Greenworks
+          button.navbar-toggler.custom-toggler(type='button' data-toggle='collapse' data-target='#mymenu')
+            span#icon-nav-head.nav-icon.navbar-toggler-icon
           #mymenu.collapse.navbar-collapse
             ul.navbar-nav.ml-auto
               li.nav-item.active
@@ -32,7 +33,10 @@ head
                 a.nav-link.mr-3(href='/waste.com/about') About Us
               li.nav-item
                 a.nav-link.mr-3(href='/waste.com/contact') Contact Us
-              i.fa.fa-map-marker.location(aria-hidden='true')
+              li.nav-item
+                a.nav-link.mr-3(href='/waste.com/login') Login
+              a(href='')
+                i.fa.fa-map-marker.location(aria-hidden='true')
   .container-fluid.text-center.about
     .container
       p
@@ -40,14 +44,14 @@ head
   .second_block
     .container
       .row
-        .col-md-6.text-justify
+        .col-lg-6.text-justify
           .left_part
             p.line1 We Are Recycle The Waste
             p.line2
               | At Apptopia, we want to solve the biggest problem in mobile: everyone is guessing.
               | Publishers need to know what apps to build, how to monetize them, and where to price them. Advertisers and brands need to identify their target users, and determine where to allocate resources in order to reach them most effectively. Investors need to know which apps and genres are growing the quickest, and where users are really spending their time (and money).
-        .col-md-5.ml-5
-          .mb-5.right_part1
+        .col-lg-6
+          .mt-5.mb-5.right_part1
             p.headd OUR MISSION
             p.text-justify
               | We believe that humor combined with slick design and a creative use of technology can make complicated ideas more understandable and products more fun. Our mission is to bring great ideas to life and help others do the same.
@@ -59,11 +63,11 @@ head
     .container.text-center
       .third_part1
         h3.mb-4.headd MEET OUR TEAM
-        p
+        p.meet
           | We are all very different. We were born in different cities, at different times, we love different music, food, movies. But we have something that unites us all. It is our company. We are its heart. We are not just a team, we are a family.
       .row.team
         .col-md-6.col-lg-3.col-xl-3.text-center
-          .card
+          .card.mt-5
             img.card-img-top.img-fluid(src='/img/About_page/person1.jpg' alt='...')
             .card-body
               h5.card-title Card title
@@ -72,7 +76,7 @@ head
               p.card-text
                 small.text-muted Last updated 3 mins ago
         .col-md-6.col-lg-3.col-xl-3.text-center
-          .card.card2
+          .card.card2.mt-5
             img.card-img-top(src='/img/About_page/person2.jpg' alt='...')
             .card-body
               h5.card-title Card title
@@ -81,7 +85,7 @@ head
               p.card-text
                 small.text-muted Last updated 3 mins ago
         .col-md-6.col-lg-3.col-xl-3.text-center
-          .card
+          .card.mt-5
             img.card-img-top.img-fluid(src='/img/About_page/person1.jpg' alt='...')
             .card-body
               h5.card-title Card title
@@ -90,7 +94,7 @@ head
               p.card-text
                 small.text-muted Last updated 3 mins ago
         .col-md-6.col-lg-3.col-xl-3.text-center
-          .card.card2
+          .card.card2.mt-5
             img.card-img-top(src='/img/About_page/person2.jpg' alt='...')
             .card-body
               h5.card-title Card title
@@ -100,8 +104,8 @@ head
                 small.text-muted Last updated 3 mins ago
   .our_clients
     .container.text-center
-      h3.mb-4 MEET OUR CLIENTS
-      h4 Thank you for choosing us!
+      h3.mb-4.headd MEET OUR CLIENTS
+      h4.meet Thank you for choosing us!
       img(src='/img/About_page/client1.png' alt='')
       img(src='/img/About_page/client2.png' alt='')
       img(src='/img/About_page/client3.png' alt='')
@@ -109,7 +113,7 @@ head
       img(src='/img/About_page/client5.png' alt='')
   // Footer
   footer.page-footer.font-small.unique-color-dark
-    div(style='background-color: #6351ce;')
+    div(style='background-color: #63acf0;')
       .container
         // Grid row
         .row.py-4.d-flex.align-items-center
@@ -137,7 +141,7 @@ head
           // Grid column
         // Grid row
     // Footer Links
-    div(style='background-color: #05152cf1; color: white;')
+    div(style='background-color: #3a5985f1; color: white;')
       .container.text-center.text-md-left
         // Grid row
         .row.pt-5
@@ -194,7 +198,7 @@ head
         // Grid row
     // Footer Links
     // Copyright
-    div(style='background-color: #020b16ef; color: white;')
+    div(style='background-color: #071c36ef; color: white;')
       .footer-copyright.text-center.py-3.text-secondary
         | &copy; 2020 Copyright:
         a(href='Recycle The Waste') Compunet Connection

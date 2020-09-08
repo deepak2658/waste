@@ -13,12 +13,13 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
+    "aws-sdk": "^2.746.0",
     "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "mangodb": "^1.0.0",
-    "mongodb": "^3.5.2",
+    "mongodb": "^3.6.1",
     "mysql2": "^2.1.0",
     "ngrok": "^3.2.7",
     "pug": "^2.0.4",
