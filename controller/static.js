@@ -17,3 +17,7 @@ exports.contactPage = (req,res,next)=>{
 exports.aboutPage = (req,res,next)=>{
     res.render('about.pug')
 }
+
+exports.signupPage = (req,res,next)=>{
+    res.render('signup.pug')
+}

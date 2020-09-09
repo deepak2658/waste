@@ -1,17 +1,17 @@
 doctype html
 head
   title Animated Login Form
-  link(rel='stylesheet' type='text/css' href='/css/login.css')
+  link(rel='stylesheet' type='text/css' href='/css/signup.css')
   link(href='https://fonts.googleapis.com/css?family=Poppins:600&display=swap' rel='stylesheet')
   script(src='https://kit.fontawesome.com/a81368914c.js')
   meta(name='viewport' content='width=device-width, initial-scale=1')
-img.wave(src='/img/login/wave.png')
+img.wave(src='/img/signup/wave.png')
 .container
   .img
-    img(src='/img/login/bg.svg')
+    img(src='/img/signup/bg.svg')
   .login-content
     form(action='index.html')
-      img(src='/img/login/avatar.svg')
+      img(src='/img/signup/avatar.svg')
       h2.title Welcome
       .input-div.one
         .i
@@ -31,7 +31,6 @@ img.wave(src='/img/login/wave.png')
         .div
           h5 Password
           input.input(type='password' required='required')
-      a.a1(href='#') Forgot Password?
-      input.btn(type='submit' value='Login')
-      a.a2(href='/cleanworks.com/signup') New User...Sign Up?
-script(type='text/javascript' src='/js/login.js')
+      input.btn(type='submit' value='Sign Up')
+      a.a2(href='/cleanworks.com/login') Already a user...Log in?
+script(type='text/javascript' src='/js/signup.js')
