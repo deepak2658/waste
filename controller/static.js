@@ -21,3 +21,7 @@ exports.aboutPage = (req,res,next)=>{
 exports.signupPage = (req,res,next)=>{
     res.render('signup.pug')
 }
+
+exports.dustbinPage = (req,res,next)=>{
+    res.render('dustbin.pug')
+}
